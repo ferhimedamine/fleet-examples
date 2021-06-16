@@ -1,0 +1,25 @@
+# apiVersion: extensions/v1beta1
+# kind: Ingress
+# metadata:
+#   annotations:
+#     field.cattle.io/creatorId: user-fmn9r
+#     field.cattle.io/ingressState: '{"ZGVtby9kZWZhdWx0L2s4c2RlbW8ubWdtdC5nY3AuYWlkZW5jZS5jb20vLy84MA==":""}'
+#     field.cattle.io/publicEndpoints: '[{"addresses":["34.95.111.80"],"port":80,"protocol":"HTTP","serviceName":"default:frontend","ingressName":"default:demo","hostname":"k8sdemo.mgmt.gcp.aidence.com","path":"/","allNodes":false}]'
+#     ingress.kubernetes.io/backends: '{"k8s-be-32094--dc54a45db04b4b6b":"HEALTHY","k8s-be-32173--dc54a45db04b4b6b":"HEALTHY"}'
+#     ingress.kubernetes.io/forwarding-rule: k8s2-fr-qfabi8iq-default-demo-xbtguaqx
+#     ingress.kubernetes.io/target-proxy: k8s2-tp-qfabi8iq-default-demo-xbtguaqx
+#     ingress.kubernetes.io/url-map: k8s2-um-qfabi8iq-default-demo-xbtguaqx
+#   labels:
+#     cattle.io/creator: norman
+#   name: demo
+#   namespace: default
+# spec:
+#   rules:
+#   - host: k8sdemo.mgmt.gcp.aidence.com
+#     http:
+#       paths:
+#       - backend:
+#           serviceName: frontend
+#           servicePort: 80
+#         path: /
+#         pathType: ImplementationSpecific
